@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <a href="#" class="gumb"></a>
+      <nav>
+        <ul>
+          <li class="active"><a href="#profile">Личная информация</a></li>
+          <li><a href="#exp">Опыт</a></li>
+          <li><a href="#js_skills">JavaScript</a></li>
+          <li><a href="#about">О себе</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="info" class="main_banner">
+        <h1>Анкета</h1>
+    </section>
+    <section id="profile" class="profile">
+      <div class="container_info container">
+          <img src="./img/questionnaire_test.png" alt="icon" class="icon_info">
+          <h3>Личная информация</h3>
+          <form action="#">
+            <div class="form_item">
+              <input type="text" id="fio" placeholder="" required>
+              <label class="form_label">ФИО</label>
+            </div>
+            <div class="form_item">
+              <div class="select">
+                <select name="year" id="year">
+                  <option class="opt_item">Год рождения</option>
+                  <option class="opt_item">1993</option>
+                  <option class="opt_item">1994</option>
+                  <option class="opt_item">1995</option>
+                  <option class="opt_item">1996</option>
+                  <option class="opt_item">1997</option>
+                  <option class="opt_item">1998</option>
+                  <option class="opt_item">1999</option>
+                  <option class="opt_item">2000</option>
+                  <option class="opt_item">2001</option>
+                  <option class="opt_item">2002</option>
+                  <option class="opt_item">2003</option>
+                  <option class="opt_item">2004</option>
+                  <option class="opt_item">2005</option>
+                </select>
+              </div>
+            </div>
+            <div class="form_item">
+              <input type="text" id="address" placeholder="" required>
+              <label class="form_label">Место проживания</label>
+            </div>
+            <div class="form_item">
+              <input type="text" id="skype" placeholder="" required>
+              <label class="form_label">Skype</label>
+            </div>
+            <div class="form_item">
+              <input type="text" id="email" placeholder="" required>
+              <label class="form_label">E-mail</label>
+            </div>
+          </form>
+          <img src="./img/questionnaire_test.png" alt="icon" class="icon_info">
+        </div>
+    </section>
+    <section id="exp" class="exp">
+      <div class="container">
+        <h3>Расскажите о своем опыте</h3>
+        <form action="#" id="skills">
+          <div>
+            <input id="checkbox_1" class="checkbox_custom" name="checkbox_1" type="checkbox" checked>
+            <label for="checkbox_1" class="checkbox_custom_label">БЭМ/OOCSS</label>
+            <input id="checkbox_2" class="checkbox_custom" name="checkbox_1" type="checkbox" checked>
+            <label for="checkbox_2" class="checkbox_custom_label">Stylus/LESS/SASS</label>
+            <input id="checkbox_3" class="checkbox_custom" name="checkbox_1" type="checkbox" checked>
+            <label for="checkbox_3" class="checkbox_custom_label">Работаю с SVG</label>
+          </div>
+          <div>
+            <input id="checkbox_4" class="checkbox_custom" name="checkbox_1" type="checkbox" checked>
+            <label for="checkbox_4" class="checkbox_custom_label">Верстаю семантично</label>
+            <input id="checkbox_5" class="checkbox_custom" name="checkbox_1" type="checkbox" checked>
+            <label for="checkbox_5" class="checkbox_custom_label">ES2015/ES2016</label>
+            <input id="checkbox_6" class="checkbox_custom" name="checkbox_1" type="checkbox" checked>
+            <label for="checkbox_6" class="checkbox_custom_label">Gulp/GRUNT</label>
+          </div>
+          <div>
+            <input id="checkbox_7" class="checkbox_custom" name="checkbox_1" type="checkbox" checked>
+            <label for="checkbox_7" class="checkbox_custom_label">Webpack</label>
+            <input id="checkbox_8" class="checkbox_custom" name="checkbox_1" type="checkbox" checked>
+            <label for="checkbox_8" class="checkbox_custom_label">jQuery</label>
+            <input id="checkbox_9" class="checkbox_custom" name="checkbox_1" type="checkbox" checked>
+            <label for="checkbox_9" class="checkbox_custom_label">Ипользую Git</label>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section id="js_skills" class="js_skills">
+      <div class="container">
+        <div class="img_box">
+          <img src="./img/js.png" alt="icon" class="icon_info">
+        </div>
+        <h3>Уровень владения JavaScript</h3>
+        <div class="level">
+          <div class="lvl_1">Не владею</div>
+          <div class="lvl_2">Использую готовые<br>решения</div>
+          <div class="lvl_3">Использую готовые решения<br>и умею переделывать</div>
+          <div class="lvl_4">Пишу сложный JS с нуля</div>
+        </div>
+        <div class="range_slider">
+          <div id="slider" class="range slider">
+            <div class="bg"></div>
+            <div id="range_touch" class="thumb"></div>
+            <div class="stick_box">
+              <div class="stick"></div>
+              <div class="stick"></div>
+              <div class="stick"></div>
+              <div class="stick"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about">
+      <div class="container">
+        <div class="img_box">
+          <img src="./img/about.png" alt="icon" class="icon_info">
+        </div>
+        <h3>Расскажите о себе</h3>
+        <p>Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</p>
+        <textarea name="message" id="message" placeholder='Понравилась тем, что работа в серьезной компании это моя мечта. Надоело фрилансить. А вы мне показались очень серьезными ребятами.'></textarea>
+        <div class="btn_box">
+          <a href="#" class="btn">Готово</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- <script src='dist/js_libs.js'></script> -->
+  <script src='dist/script.js'></script>
+</body>
+</html>
