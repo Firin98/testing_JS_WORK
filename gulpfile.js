@@ -6,7 +6,7 @@ var concat = require('gulp-concat');
 var babel = require('gulp-babel');
 const autoprefixer = require('gulp-autoprefixer');
 var paths = {
-  html:['./index.html'],
+  html:['*.html'],
   css:['./src/css/style.styl'],
   js:['./src/script.js']
 };
@@ -21,8 +21,8 @@ gulp.task('browserSync', function() {
   });
 });
 gulp.task('html', function(){
-  gulp.src(paths.html)
-  .pipe(reload({stream:true}));
+  return gulp.src('*.html')
+  .pipe(browserSync.reload({ stream: true }))
 });
 gulp.task('js:libs', function(){
   gulp.src(['node_modules/jquery/dist/jquery.min.js',
@@ -48,7 +48,7 @@ gulp.task('stylus', function () {
     .pipe(reload({stream:true}));
 });
 gulp.task('watch',function(){
-  gulp.watch(paths.html, gulp.series('html'));
+  gulp.watch(paths.html, gulp.parallel('html') )
   gulp.watch(paths.css, gulp.series('stylus'));
   gulp.watch(paths.js, gulp.series('js'));
 });
