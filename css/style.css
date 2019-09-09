@@ -223,17 +223,22 @@ select {
   height: 60px;
   margin: auto;
   margin-bottom: 25px;
+  width: 320px;
 }
-.profile .container_info form .form_item .select .opt_item {
-  padding-left: calc(50% - 1em);
+.profile .container_info form .form_item .select .selectric {
+  background: transparent;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
 }
-.profile .container_info form .form_item .select:after {
+.profile .container_info form .form_item .select .selectric .button {
+  background-color: transparent;
+  height: 60px;
+}
+.profile .container_info form .form_item .select .selectric .button::after {
   content: "";
   padding: 0 8px;
   font-size: 12px;
   position: absolute;
-  right: 8px;
-  top: 4px;
   z-index: 1;
   text-align: center;
   width: 10%;
@@ -243,6 +248,51 @@ select {
   background-image: url("./../img/arr_down.png");
   background-repeat: no-repeat;
   background-position: center center;
+  border: none;
+}
+.profile .container_info form .form_item .select .selectric .label {
+  height: 60px;
+  line-height: 60px;
+  font-weight: 400;
+  color: #c9c9c9;
+  font-size: 23.99px;
+  text-align: center;
+  padding-left: 28px;
+}
+.profile .container_info form .form_item .select .selectric-items {
+  background-color: #fff;
+  border-radius: 4px;
+  outline: none;
+}
+.profile .container_info form .form_item .select .selectric-items li {
+  text-align: center;
+  color: #435993;
+  font-size: 20px;
+}
+.profile .container_info form .form_item .select .selectric-items .selectric-scroll::-webkit-scrollbar {
+  width: 20px;
+  background-color: #f00;
+}
+.profile .container_info form .form_item .select .selectric-items .selectric-scroll::-webkit-scrollbar-button {
+  width: 10px;
+  background-color: #00f;
+}
+.profile .container_info form .form_item .select .selectric-items .selectric-scroll::-webkit-scrollbar-track {
+  background-color: #000;
+}
+.profile .container_info form .form_item .select .selectric-items .selectric-scroll::-webkit-scrollbar-track-piece {
+  background-color: #ff0;
+}
+.profile .container_info form .form_item .select .selectric-items .selectric-scroll::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: #666;
+  border-radius: 3px;
+}
+.profile .container_info form .form_item .select .selectric-items .selectric-scroll::-webkit-scrollbar-corner {
+  background-color: #999;
+}
+.profile .container_info form .form_item .select .selectric-items .selectric-scroll::-webkit-resizer {
+  background-color: #666;
 }
 .profile .container_info form .form_item .form_label {
   position: absolute;

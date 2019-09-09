@@ -77,8 +77,8 @@ let thumb = slider.querySelector('.thumb');
     thumb.ondragstart = function() {
       return false;
     };
-
-
-
 }
 
+(function($){
+  $('select').selectric();
+})(jQuery);

@@ -26,7 +26,7 @@ gulp.task('html', function(){
 });
 gulp.task('js:libs', function(){
   gulp.src(['node_modules/jquery/dist/jquery.min.js',
-          'node_modules/slick-carousel/slick/slick.min.js'])
+          'node_modules/slick-carousel/slick/slick.min.js','dist/jquery.selectric.min.js'])
   .pipe(concat('js_libs.js'))
   .pipe(gulp.dest('./dist'));
 });

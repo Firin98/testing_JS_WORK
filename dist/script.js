@@ -73,3 +73,7 @@ window.onload = function () {
     return false;
   };
 };
+
+(function ($) {
+  $('select').selectric();
+})(jQuery);
